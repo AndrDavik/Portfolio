@@ -6,23 +6,41 @@
 		display: grid;
 		grid-template: 1fr / 400px 600px;
 	}
-	&__me {
+	&__wrapper {
 		display: grid;
 		grid-template: repeat(4, 1fr) / repeat(2, 260px);
 		margin-left: 70px;
 		column-gap: 50px;
 	}
-	&__descr {
+	&__promo {
 		grid-column: 1/3;
-		
 	}
-	&__web {
-		margin-top: 40px;
-	}
-	&__app {
-		margin-top: 40px;
-	}
-	&__design {
+	&__skill-item {
+		display: flex;
+		position: relative;
+		width: 260px;
 		margin-top: 20px;
+	}
+	&__circle {
+		position: relative;
+		padding: 15px 0 0 15px;
+		@include before_circle;
+		&:before {
+			top: 0;
+		}
+	}
+	&__descr {
+		margin-left: 15px;
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		color: #000000;
+		&_fz12 {
+			font-size: 12px;
+			line-height: 18px;
+			margin-top: 6px;
+		}
 	}
 }
