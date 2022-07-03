@@ -1,0 +1,28 @@
+.about {
+	min-height: 600px;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	&__info {
+		display: grid;
+		grid-template: 1fr / 400px 600px;
+	}
+	&__me {
+		display: grid;
+		grid-template: repeat(4, 1fr) / repeat(2, 260px);
+		margin-left: 70px;
+		column-gap: 50px;
+	}
+	&__descr {
+		grid-column: 1/3;
+		
+	}
+	&__web {
+		margin-top: 40px;
+	}
+	&__app {
+		margin-top: 40px;
+	}
+	&__design {
+		margin-top: 20px;
+	}
+}
