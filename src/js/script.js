@@ -18,6 +18,7 @@ counters.forEach( (item, i) => {
 });
 
 
+//Smooth scroll
 const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {

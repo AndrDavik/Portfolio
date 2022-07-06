@@ -21,9 +21,6 @@
 			margin: 0;
 		}
     }
-	&__text {
-		margin-top: 20px;
-	}
 	&__title {
 		margin-left: 15px;
 		@include before_circle;
@@ -31,6 +28,9 @@
 			top: 0;
 			left: 0;
 		}
+	}
+	&__text {
+		margin-top: 20px;
 	}
 	&__skills {
 		display: grid;
