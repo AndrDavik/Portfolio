@@ -22,6 +22,12 @@
 			}
 		}
 	}
+	.resume {
+		&__wrapper {
+			padding: 20px 20px 0 20px;
+			column-gap: 50px;
+		}
+	}
 }
 
 @media (max-width: 992px) {
@@ -44,6 +50,19 @@
 				column-gap: 20px;
 			}
 		}
+	}
+	.resume {
+		&__wrapper {
+			grid-template-columns: auto;
+		}
+		&__subtitle {
+			font-size: 30px;
+		}
+		&__column {
+			margin-top: 20px;
+		}
+
+		
 	}
 }
 
@@ -116,6 +135,15 @@
         }
 		&__subtitle {
 			font-size: 24px;
+		}
+	}
+	.resume {
+		&__subtitle {
+			font-size: 24px;
+			line-height: 36px;
+		}
+		&__column {
+			margin-top: 40px;
 		}
 	}
 }
